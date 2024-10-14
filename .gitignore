@@ -53,7 +53,7 @@ coverage.xml
 *.py,cover
 .hypothesis/
 
-# Jupyter Notebook files
+# Jupyter Notebook file
 .ipynb_checkpoints/
 
 # macOS / Windows specific
