@@ -59,7 +59,7 @@ class Stock:
             logging.info(f"Trade recorded successfully for {self.data['symbol']}")
 
     def calculate_volume_weighted_stock_price(self):
-        trade_time_cutoff = datetime.now() - timedelta(minutes=15)
+        trade_time_cutoff = datetime.now() - timedelta(minutes=5)
         recent_trades = [trade for trade in self.trades if trade["timestamp"] >= trade_time_cutoff]
 
         if not recent_trades:
